@@ -3,14 +3,13 @@ import sys, os, glob, time, boto3, urllib2, StringIO
 from boto3.s3.transfer import S3Transfer
 
 AWS_BUCKET = "senthil-raspi-carpark-space"
-directory = 'basinreserve/'
+directory = 'basin-reserve/'
 session = boto3.Session(profile_name='senthil.ryde')
 s3client = session.resource('s3')
 s3putclient = session.client('s3')
 bucket = s3client.Bucket(AWS_BUCKET)
 #print (bucket)
-sourceurl = 'https://images.freeimages.com/images/large-previews/bd7/falloxbow-1058032.jpg'
-
+sourceurl = 'http://202.142.12.41/snapshotJPEG?Resolution=640x480&Quality=Clarity'
 
 
 # def list_bucket_contents(bucket):
