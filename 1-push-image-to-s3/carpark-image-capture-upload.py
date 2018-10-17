@@ -10,7 +10,7 @@ s3putclient = session.client('s3')
 bucket = s3client.Bucket(AWS_BUCKET)
 #print (bucket)
 #sourceurl = 'http://202.142.12.41/snapshotJPEG?Resolution=640x480&Quality=Clarity'
-sourceurl = 'http://192.168.1.69:81/videostream.cgi?user=admin&pwd=Jose1001&resolution=32&rate=0'
+sourceurl = 'http://192.168.1.69:81/snapshot.cgi?user=admin&pwd=Test1234'
 
 # def list_bucket_contents(bucket):
 #    for object in bucket.objects.all():
